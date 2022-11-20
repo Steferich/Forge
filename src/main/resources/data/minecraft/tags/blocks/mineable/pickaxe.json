@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "kingdoms:zircon_ore",
+    "kingdoms:zircon_block",
+    "kingdoms:deepslate_zircon_ore"
+  ]
+}

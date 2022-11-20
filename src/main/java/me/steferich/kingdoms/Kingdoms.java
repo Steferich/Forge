@@ -1,6 +1,8 @@
 package me.steferich.kingdoms;
 
 import com.mojang.logging.LogUtils;
+import me.steferich.kingdoms.block.ModBlocks;
+import me.steferich.kingdoms.item.ModItems;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -20,6 +22,9 @@ public class Kingdoms {
     // Very important comment
     public Kingdoms() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
+        ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
